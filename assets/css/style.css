@@ -1,0 +1,567 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background: url('../images/Background_pc.jpg') no-repeat center / cover; /* Add this line */ 
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background-attachment: fixed; 
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(14, 4, 96, 0.8); /* 80% opacity */
+  color: #ffffff; 
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 0 55px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Memisahkan elemen kiri dan kanan */
+  width: 100%; /* Pastikan lebar 100% */
+}
+
+header h5 a {
+  font-family: 'Press Start 2P', cursive; 
+  font-size: 1em;
+  margin-left: 10px;
+  color: #ffffff; 
+}
+
+#welcome-card {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  margin-top: 5%;
+}
+
+#welcome-card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #fff; 
+}
+
+#welcome-card p {
+  margin-bottom: 15px;
+  color: #fff; 
+}
+
+#welcome-card button{
+  width: 50%;
+  display: inline-block;
+  color: #ffffff;
+  background-color: #3c40c6; 
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: 2px solid  #d2dae2;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 0.9em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Time Styles */
+time {
+  min-width: 80px;
+  font-weight: bold;
+  font-size: 1em;
+  color: #000000; 
+}
+
+/* Explanation Div */
+#explanation-div {
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 18px;
+  text-align: left;
+  color: #ffffff; 
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#start-card {
+  text-align: center; 
+}
+
+#start-card label {
+  background-color: transparent; /* Membuat teks label tidak terlihat */
+}
+
+#start-card label, #start-card input, #start-card button {
+  display: block;
+  margin: 10px auto;
+}
+
+#initials {
+  max-width: 200px;
+  margin: 8px 0;
+  padding: 1vh;
+  box-sizing: border-box; 
+}
+
+.button {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #3c40c6; 
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: 2px solid  #d2dae2;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 0.9em;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+  background-color: #3d006e; 
+  transform: scale(1.05);
+}
+
+.inline-buttons {
+  display: inline-flex;
+}
+
+.option-button.correct {
+  border: 2px solid #0be881; 
+  color: #fff;
+}
+
+.option-button.incorrect {
+  border: 2px solid #ff4d4d;  
+  color: #ffffff;
+}
+
+.card {
+  max-width: 800px;
+  width: 100%;
+  background-color: rgba(14, 4, 96, 0.8); /* 80% opacity */
+  margin-top: 5%;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.card:before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border: 3px #8e2de2; 
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.inline-form .button {
+  margin-right: 5px;
+}
+
+#submission-form {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+
+#start-screen {
+  display: inline;
+  text-align: center;
+}
+
+.option-button {
+  width: 90%;
+  text-align: left;
+  margin: 5px 0;
+  padding: 10px;
+  border: 2px solid #d2dae2;
+  border-radius: 100px;
+  background-color:#3c40c6;
+  color: whitesmoke; 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.option-button:hover {
+  background-color: #0652DD;
+  transform: scale(1.02);
+}
+
+#question-label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.option-label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  padding: 15px;
+  margin: 10px 0;
+  border: 2px solid #8e2de2; 
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.option-label span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #5a2d81; 
+  color: #ffffff;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.option-label p {
+  margin: 0;
+}
+
+.option-label:hover {
+  background-color: #f2f2f2;
+  transform: scale(1.02);
+}
+
+.option-label.correct {
+  background-color: #0be881;
+  color: white;
+}
+
+.option-label.incorrect {
+  background-color: #f44336; 
+  color: white;
+}
+
+.option-label.correct span,
+.option-label.incorrect span {
+  background-color: #ffffff;
+  color: inherit; 
+}
+
+#result-div {
+  display: none;
+}
+
+#question-card {
+  position: relative;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 5px;
+}
+
+#explanation-div {
+  margin-bottom: 20px; 
+  opacity: 0; 
+  transition: opacity 0.5s; 
+}
+
+#explanation-div.show {
+  opacity: 1; 
+}
+
+.button-container {
+  margin-top: 30px; 
+}
+
+#finish-button {
+  background-color: none ; 
+}
+
+#next-button {
+  background-color: none ;   
+}
+
+.inline-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#initials {
+  width: 100%;
+  margin: 8px 0;
+  padding: 1vh;
+}
+
+#back-button {
+  margin-right: 8px;
+}
+
+#highscore-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#highscore-list li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 480px) {
+
+  body {
+    font-size: 14px;
+  }
+  header {
+    padding: 5px;
+  }
+  .card {
+    max-width: 90%;
+    padding: 10px;
+  }
+  .button {
+    padding: 20px 14px;
+    font-size: 12px;
+  }
+  .option-button {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 12px;
+  }
+  header {
+    padding: 3px;
+  }
+  .card {
+    max-width: 85%;
+    padding: 8px;
+  }
+  .button {
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+  .option-button {
+    padding: 4px;
+    font-size: 10px;
+  }
+}
+
+.animate-fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes trophyAnimation {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.trophy-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.trophy {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px; /* add margin to trophy images */
+  animation: float 3s ease-in-out infinite, shine 1.5s infinite; /* Durasi 3 detik, ease-in-out, dan infinite */
+  }
+
+  @keyframes float {
+    0% {
+        transform: translatey(0);
+    }
+    50% {
+        transform: translatey(-10px); /* Naik 10px */
+    }
+    100% {
+        transform: translatey(0);
+    }
+  }
+
+  @keyframes shine {
+    0% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.5);
+    }
+    100% {
+        filter: brightness(1);
+    }
+  }
+
+#leaderboard-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #ffd700;
+}
+
+#leaderboard-link i {
+  margin-right: 10px;
+}
+
+#leaderboard-link span {
+  font-weight: bold;
+}
+
+#leaderboard-link:hover {
+  color: #ffffff;
+}
+
+#ranking-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#score-text {
+  display: inline;
+  margin-left: 10px;
+}
+
+.bottom-right-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.header-slide-up {
+  animation: slide-up 0.5s forwards; /* Durasi animasi 0.5 detik */
+}
+
+@keyframes slide-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.header-slide-down {
+  animation: slide-down 0.5s forwards; /* Durasi animasi 0.5 detik */
+}
+
+#confetti-canvas {
+  position: absolute; /* Pastikan canvas diposisikan absolut */
+  top: 0; /* Letakkan canvas di bagian atas */
+  left: 0; /* Letakkan canvas di bagian kiri */
+  width: 100%; /* Canvas harus mengisi lebar div */
+  height: 100%; /* Canvas harus mengisi tinggi div */
+  pointer-events: none; /* Agar canvas tidak menghalangi interaksi dengan elemen lain */
+  z-index: -1; /* Agar canvas berada di belakang konten lainnya */
+}
+
+#score-leaderboard-card {
+  position: relative; /* Agar canvas dapat diposisikan relatif terhadap div ini */
+  overflow: hidden; /* Sembunyikan bagian canvas yang keluar dari div */
+}
+
+#play-pause-backsound {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+#play-pause-backsound:hover {
+  background-color: #3e8e41;
+  transform: scale(1.05);
+}
+
+#play-pause-backsound:focus {
+  outline: none;
+}
+
+#play-pause-backsound i {
+  margin-right: 5px; /* Spasi antara ikon dan teks */
+}
+
+/* Ubah ikon volume saat tombol diklik */
+#play-pause-backsound.playing i {
+  content: "\f026"; /* Ikon mute */
+}
